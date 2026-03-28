@@ -1,1 +1,11 @@
-
+feat: 第三方市场、离线守卫与 NVIDIA 文档引导增强
+- 新增 Modules 第三方软件市场，支持元信息识别与风险确认执行
+- NVIDIA 移除 vGPU 自动配置，vGPU Unlock 改为先全屏警告并引导 Wiki
+- 新增离线模式网络诊断（IP/路由/DNS）与离线确认流程，离线时跳过在线更新
+- 温度监控新增 UPS 服务管理；不启用 UPS 显示时自动 stop/disable apcupsd
+- 修复 PVE 9.1.5 版本识别误拦截问题，新增 --i-know-what-i-do 启动参数
+- 新增邮件通知自动化引导（Postfix SMTP，支持 QQ/163/Gmail/自定义）
+- 新增 IMG 镜像导入功能，支持转换 qcow2/raw 并导入指定虚拟机与存储
+- 新增磁盘/控制器/NVMe 直通工具箱，自动拦截含系统盘控制器直通
+- 修复温控概览布局拉伸问题，增强 NVMe 断电指标与 SATA SMART 显示
+- 修复内核清理漏检 proxmox-kernel signed 包
